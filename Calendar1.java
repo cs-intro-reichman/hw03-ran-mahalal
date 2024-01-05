@@ -20,7 +20,7 @@ public class Calendar1 {
 	    int debugDaysCounter = 0; 
 	    //// Write the necessary initialization code, and replace the condition
 	    //// of the while loop with the necessary condition 
-	 	while (true) {
+	 	//while (true) {
 	 		//// Write the body of the while 		
 	 		advance();
 	 		debugDaysCounter++;
