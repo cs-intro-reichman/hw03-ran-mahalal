@@ -1,4 +1,4 @@
-/** String processing exercise 2. */
+	/** String processing exercise 2. */
 public class UniqueChars {
     public static void main(String[] args) {  
         String str = args[0];
@@ -11,7 +11,20 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+    	String ans = "";
+    	String used = "";
+    	char current = '0';
+        for (int i = 0; i < s.length(); i++) {
+        	current = s.charAt(i);
+        	if (current == 32) {
+        		ans = ans + " ";
+        	} else if (used.indexOf(current) == -1) {
+        		ans = ans + current;
+        		used = used + current;
+        	} else {
+        		used = used + current;
+			}
+        }
+        return ans;
     }
 }
